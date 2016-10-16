@@ -3,6 +3,7 @@
 @import 'mixin';
 @import 'base';
 @import 'clearfix';
+@import 'index';
 
 /* 以下にスタイルを記述
 ************************* */
@@ -22,116 +23,17 @@ a {
   text-decoration: none;
 }
 
-.top-title {
-  font-size: 75px;
-  vertical-align: middle;
-  text-align: center;
-  color: #002a7a;
-  span {
-    font-size: 100px;
-    vertical-align: middle;
-  }
-}
 
-.gnav {
+main {
+  width: 1024px;
   margin: 0 auto;
-  max-width: 1024px;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  a {
-    display: block;
-    width: 250px;
-    height: 250px;
-    margin: 0 30px;
-    border-radius: 50%;
-    border: 12px solid gray;
-    box-sizing: border-box;
-    color: gray;
-    text-align: center;
-    line-height: calc( 250px - 12px );
-    font-size: 60px;
-    transition: all .2s;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-
-    background: $tare center center/cover;
-    &.recruit { background-image: url('../images/top/nav/recruit.png')}
-    &.menu { background-image: url('../images/top/nav/menu.png')}
-    &.about { background-image: url('../images/top/nav/about.png')}
-    &.access { background-image: url('../images/top/nav/access.png')}
-    &.holic { background-image: url('../images/top/nav/holic.png')}
-    &:nth-child(3n) {
-      border-color: red;
-      animation-name: quiver-h;
-    }
-    &:nth-child(3n+1) {
-      border-color: green;
-      animation-name: quiver-s;
-    }
-    &:nth-child(3n+2) {
-      border-color: blue;
-      animation-name: quiver-v;
-    }
-    &:hover {
-      color: white;
-      animation-duration: .15s;
-      animation-name: scale;
-      animation-iteration-count: 1;
-     }
-    @keyframes scale {
-      0% { transform: scale(1); }
-      50% { transform: scale(.9); }
-      100% { transform: scale(1); }
-    }
-    @keyframes quiver-v { // 縦
-      0% { transform: translateY(6px); }
-      50% { transform: translateY(-6px); }
-      100% { transform: translateY(6px); }
-    }
-    @keyframes quiver-h { // 横
-      0% { transform: translateX(6px); }
-      50% { transform: translateX(-6px); }
-      100% { transform: translateX(6px); }
-    }
-    @keyframes quiver-s { // 斜め
-      0% { transform: translate(6px, 6px); }
-      50% { transform: translate(-6px, -6px); }
-      100% { transform: translate(6px, 6px); }
-    }
-  }
-}
-
-.tare {
-  position: fixed;
-  top: 90vh;
-  width: 100%;
-  height: 100vh;
-  background-color: $tare;
-  &:before {
-    content: '';
-    display: block;
-    background-image: url('../images/top/waving-tare.png');
-    height: 50px;
-    width: 100vw;
-    margin-top: -50px;
-  }
 }
 
 
 .footer {
   width: 100%;
   height: 60px;
-  line-height: 60px;
   background-color: gray;
-  color: white;
-  font-size: 20px;
-  letter-spacing: 1px;
-  &.index {
-    position: fixed;
-    bottom: 0;
-    z-index: 10;
-  }
   text-align: center;
+  line-height: 60px;
 }
