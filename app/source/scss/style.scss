@@ -6,3 +6,74 @@
 
 /* 以下にスタイルを記述
 ************************* */
+
+@font-face {
+  font-family: 'Fette';
+  src: url('../fonts/fette.ttf');
+}
+
+body {
+  font-family: 'Fette';
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-title {
+  font-size: 75px;
+  vertical-align: middle;
+  text-align: center;
+  span {
+    font-size: 90px;
+    vertical-align: middle;
+  }
+}
+
+.gnav {
+  margin: 0 auto;
+  max-width: 1024px;
+  text-align: center;
+  a {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: $tare;
+    border-radius: 50%;
+    border: 12px solid gray;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    line-height: calc( 200px - 12px );
+    font-size: 35px;
+  }
+}
+
+.tare {
+  position: fixed;
+  top: 90vh;
+  width: 100%;
+  height: 100vh;
+  background-color: $tare;
+  &:before {
+    content: '';
+    display: block;
+    background-image: url('../images/top/waving-tare.png');
+    height: 50px;
+    width: 100vw;
+    margin-top: -50px;
+  }
+}
+
+
+.footer {
+  width: 100%;
+  height: 60px;
+  &.index {
+    position: fixed;
+    bottom: 0;
+  }
+  text-align: center;
+}
