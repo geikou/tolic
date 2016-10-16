@@ -15,18 +15,58 @@
 
 body {
   font-family: 'Fette';
-  max-height: 100vh;
-  overflow: hidden;
 }
 
 a {
   text-decoration: none;
 }
 
-
-main {
-  width: 1024px;
+.gnav-toggle {
+  background-color: pink;
+  padding-top: 15px;
+  width: 150px;
+  height: 75px;
   margin: 0 auto;
+  text-align: center;
+  div {
+    transition: all 0.3s;
+    display: block;
+    width: 40px;
+    height: 6px;
+    margin: 0 auto;
+    border-radius: 3px;
+    background-color: white;
+  }
+}
+
+.main {
+  width: 980px;
+  margin: 0 auto;
+  .h2 {
+    text-align: center;
+    margin: 20px 0 80px;
+  }
+  .about-date {
+    margin-top: 40px;
+  }
+  .about-tolic {
+    display: flex;
+    h3 {
+      margin: 20px 0;
+    }
+    .tolic-mv {
+      flex: 2;
+      height: auto;
+      img {
+        width: 80%;
+      }
+    }
+    .tolic-text {
+      flex: 5;
+      line-height: 1.6em;
+      letter-spacing: .01em;
+    }
+  }
 }
 
 
