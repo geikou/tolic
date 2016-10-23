@@ -22,13 +22,16 @@ a {
 }
 
 .gnav-toggle {
+  position: relative;
+  top: 0;
+  z-index: 10;
   background-color: pink;
   padding-top: 15px;
   width: 150px;
   height: 75px;
   margin: 0 auto;
   text-align: center;
-  div {
+  span {
     transition: all 0.3s;
     display: block;
     width: 40px;
@@ -36,6 +39,48 @@ a {
     margin: 0 auto;
     border-radius: 3px;
     background-color: white;
+    &.top {
+      margin-bottom: 8px;
+    }
+    &.bottom {
+      margin-top: 8px;
+    }
+  }
+  &.is-open {
+    span {
+      &.top {
+        transform: rotate(405deg) translateX(9px) translateY(16px);
+      }
+      &.bottom {
+        transform: rotate(-405deg) translateX(5px) translateY(-10px);
+      }
+      &.middle {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.gnav {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: $yellow;
+  top: 0;
+  font-size: 0;
+  .gnav-inner {
+    width: 400px;
+    margin: 150px auto 0;
+  }
+  a {
+    display: inline-block;
+    width: 50%;
+    height: 110px;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 1px 1px 10px #777;
+    text-align: center;
   }
 }
 

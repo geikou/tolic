@@ -6,4 +6,5 @@
 /* ヘッダーメニューのToggle */
 $('.js-gnav-toggle').on('click', function() {
   $(this).toggleClass('is-open');
+  $('.js-gnav').slideToggle(450);
 });
