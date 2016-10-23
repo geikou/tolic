@@ -1,6 +1,11 @@
 @import 'setting';
 @import 'mixin';
 
+#index {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .top-title {
   font-size: 75px;
   vertical-align: middle;
@@ -21,9 +26,9 @@
   justify-content: center;
   a {
     display: block;
-    width: 250px;
-    height: 250px;
-    margin: 20px 40px;
+    width: 230px;
+    height: 230px;
+    margin: 20px 30px;
     border-radius: 50%;
     border: 12px solid gray;
     box-sizing: border-box;
@@ -98,10 +103,10 @@
   &:before {
     content: '';
     display: block;
-    background-image: url('../images/top/waving-tare.png');
-    height: 50px;
+    background: url('../images/top/wave.png') repeat-x;
+    height: 36px;
     width: 100vw;
-    margin-top: -50px;
+    margin-top: -36px;
   }
 }
 
@@ -119,4 +124,9 @@
     z-index: 10;
   }
   text-align: center;
+}
+
+.main {
+  padding-left: 0;
+  padding-right: 0;
 }
