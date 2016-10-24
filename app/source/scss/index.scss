@@ -134,6 +134,10 @@
     top: -230px;
     left: 30px;
     width: 200px;
+    @include media(sp) {
+      width: 120px;
+      top: -140px;
+    }
   }
 }
 
