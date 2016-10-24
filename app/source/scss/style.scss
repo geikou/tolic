@@ -20,6 +20,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -186,9 +187,15 @@ a {
       background: rgba(255,255,255,0.25);
     }
     .recruit-about {
-      width: 60%;
-      margin: 40px auto;
+      position: relative;
+      width: 90%;
+      max-width: 500px;
+      margin: 40px auto 60px auto;
+      @include media(sp) {
+        margin: 30vw auto 60px auto;
+      }
       line-height: 1.4em;
+      z-index: 1;
       .l-txt {
         padding: 20px 0 10px 0;
         font-size: 1.6em;
@@ -197,44 +204,56 @@ a {
     }
     .leftimg {
       position: absolute;
-      top: 38vh;
       left: 10px;
+      width: 40vw;
+      max-width: 233px;
     }
     .rightimg {
       position: absolute;
-      top: 38vh;
       right: 10px;
+      width: 40vw;
+      max-width: 230px;
     }
     .form {
-      width: 60%;
-      margin: 0 auto;
-      label {
-        display: block;
-        text-align: center;
-        margin: 16px 0 6px 0;
+      @include media(sp) {
+        padding: 0 0 30px 0;
       }
-      input, textarea {
-        width: 100%;
-        padding: 10px 8px;
-        font-size: 14px;
-        box-sizing: border-box;
-        border: none;
-        &:focus {
-          outline: 2px solid $blue;
+      form {
+        width: 90%;
+        max-width: 500px;
+        margin: 16px auto 0 auto;
+        label {
+          display: block;
+          text-align: center;
+          margin: 16px 0 6px 0;
         }
-      }
-      textarea {
-        vertical-align: top;
-        height: 160px;
-      }
-      .button {
-        max-width: 327px;
-        margin: 20px auto 0 auto;
-        input {
-          padding: 0;
+        input, textarea {
+          width: 100%;
+          padding: 10px 8px;
+          font-size: 14px;
+          box-sizing: border-box;
+          border: none;
+          &:focus {
+            outline: 2px solid $blue;
+          }
         }
-        &:hover {
-          opacity: 0.8;
+        textarea {
+          vertical-align: top;
+          height: 160px;
+        }
+        .button {
+          width: 327px;
+          height: 68px;
+          @include media(sp) {
+            max-width: 280px;
+          }
+          margin: 20px auto 0 auto;
+          input {
+            padding: 0;
+          }
+          &:hover {
+            opacity: 0.8;
+          }
         }
       }
     }
