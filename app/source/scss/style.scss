@@ -86,7 +86,7 @@ a {
 }
 
 .main {
-  width: 980px;
+  max-width: 980px;
   margin: -120px auto 0;
   padding: 160px 100px 100px;
   box-sizing: border-box;
@@ -168,6 +168,33 @@ a {
       position: absolute;
       top: 38vh;
       right: 10px;
+    }
+    .form {
+      width: 60%;
+      margin: 0 auto;
+      label {
+        display: block;
+        text-align: center;
+        margin: 16px 0 6px 0;
+      }
+      input, textarea {
+        width: 100%;
+        padding: 6px;
+        font-size: 14px;
+        box-sizing: border-box;
+      }
+      textarea {
+        vertical-align: top;
+        height: 160px;
+      }
+      .button {
+        max-width: 327px;
+        text-align: center;
+        input {
+          margin: 0 auto;
+          padding: 0;
+        }
+      }
     }
   }
 }
