@@ -18,6 +18,10 @@ body {
   background: url('../images/common/bg.png') center bottom/cover;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -73,6 +77,9 @@ a {
   .gnav-inner {
     width: 400px;
     margin: 150px auto 0;
+    @include media(sp) {
+      width: 100vw;
+    }
   }
   a {
     display: inline-block;
@@ -82,6 +89,9 @@ a {
     color: white;
     text-shadow: 1px 1px 10px #777;
     text-align: center;
+    @include media(sp) {
+      font-size: 2.2rem;
+    }
   }
 }
 
@@ -94,6 +104,16 @@ a {
   .h2 {
     text-align: center;
     margin: 20px 0 80px;
+    @include media(sp) {
+      img {
+        width: 88%;
+      }
+    }
+  }
+  @include media(sp) {
+    box-sizing: content-box;
+    padding: 0;
+    padding-top: 160px;
   }
 }
 
@@ -112,6 +132,10 @@ a {
   }
   .about-tolic {
     display: flex;
+    @include media(sp) {
+      display: block;
+      padding: 0 20px;
+    }
     h3 {
       margin: 20px 0;
     }
@@ -119,7 +143,9 @@ a {
       flex: 2;
       height: auto;
       img {
+        display: block;
         width: 80%;
+        margin: 0 auto;
       }
     }
     .tolic-text {
@@ -128,8 +154,18 @@ a {
       font-size: 18px;
       line-height: 1.8em;
       letter-spacing: .01em;
+      img {
+        @include media(sp) {
+          width: 50%;
+          margin: 0 auto;
+        }
+      }
       p {
         margin-top: 50px;
+        @include media(sp) {
+          font-size: 15px;
+          margin: 0;
+        }
       }
     }
   }
