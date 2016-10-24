@@ -166,7 +166,67 @@ a {
 }
 
 #recruit {
-
+  .main {
+    position: relative;
+    h2,
+    .recruit-about {
+      text-align: center;
+    }
+    h3,p {
+      margin: 20px 0;
+    }
+    h3 {
+      padding: 10px 0;
+      background: rgba(255,255,255,0.25);
+    }
+    .recruit-about {
+      width: 60%;
+      margin: 40px auto;
+      line-height: 1.4em;
+      .l-txt {
+        padding: 20px 0 10px 0;
+        font-size: 1.6em;
+        font-weight: bold;
+      }
+    }
+    .leftimg {
+      position: absolute;
+      top: 38vh;
+      left: 10px;
+    }
+    .rightimg {
+      position: absolute;
+      top: 38vh;
+      right: 10px;
+    }
+    .form {
+      width: 60%;
+      margin: 0 auto;
+      label {
+        display: block;
+        text-align: center;
+        margin: 16px 0 6px 0;
+      }
+      input, textarea {
+        width: 100%;
+        padding: 6px;
+        font-size: 14px;
+        box-sizing: border-box;
+      }
+      textarea {
+        vertical-align: top;
+        height: 160px;
+      }
+      .button {
+        max-width: 327px;
+        text-align: center;
+        input {
+          margin: 0 auto;
+          padding: 0;
+        }
+      }
+    }
+  }
 }
 
 #menu {
