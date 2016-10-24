@@ -179,9 +179,13 @@ a {
       }
       input, textarea {
         width: 100%;
-        padding: 6px;
+        padding: 10px 8px;
         font-size: 14px;
         box-sizing: border-box;
+        border: none;
+        &:focus {
+          outline: 2px solid $blue;
+        }
       }
       textarea {
         vertical-align: top;
@@ -189,10 +193,12 @@ a {
       }
       .button {
         max-width: 327px;
-        text-align: center;
+        margin: 20px auto 0 auto;
         input {
-          margin: 0 auto;
           padding: 0;
+        }
+        &:hover {
+          opacity: 0.8;
         }
       }
     }
