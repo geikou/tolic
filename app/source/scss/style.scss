@@ -136,7 +136,40 @@ a {
 }
 
 #recruit {
-
+  .main {
+    position: relative;
+    h2,
+    .recruit-about {
+      text-align: center;
+    }
+    h3,p {
+      margin: 20px 0;
+    }
+    h3 {
+      padding: 10px 0;
+      background: rgba(255,255,255,0.25);
+    }
+    .recruit-about {
+      width: 60%;
+      margin: 40px auto;
+      line-height: 1.4em;
+      .l-txt {
+        padding: 20px 0 10px 0;
+        font-size: 1.6em;
+        font-weight: bold;
+      }
+    }
+    .leftimg {
+      position: absolute;
+      top: 38vh;
+      left: 10px;
+    }
+    .rightimg {
+      position: absolute;
+      top: 38vh;
+      right: 10px;
+    }
+  }
 }
 
 #menu {
