@@ -126,6 +126,10 @@ a {
   }
   .about-tolic {
     display: flex;
+    @include media(sp) {
+      display: block;
+      padding: 0 20px;
+    }
     h3 {
       margin: 20px 0;
     }
@@ -133,7 +137,9 @@ a {
       flex: 2;
       height: auto;
       img {
+        display: block;
         width: 80%;
+        margin: 0 auto;
       }
     }
     .tolic-text {
@@ -142,8 +148,18 @@ a {
       font-size: 18px;
       line-height: 1.8em;
       letter-spacing: .01em;
+      img {
+        @include media(sp) {
+          width: 50%;
+          margin: 0 auto;
+        }
+      }
       p {
         margin-top: 50px;
+        @include media(sp) {
+          font-size: 15px;
+          margin: 0;
+        }
       }
     }
   }
