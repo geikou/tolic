@@ -31,10 +31,10 @@ a {
   position: relative;
   top: 0;
   z-index: 10001;
-  background-color: pink;
+  background: url('../images/common/nav.png') center top no-repeat;
   padding-top: 15px;
-  width: 150px;
-  height: 75px;
+  width: 200px;
+  height: 120px;
   margin: 0 auto;
   text-align: center;
   span {
@@ -99,7 +99,7 @@ a {
 
 .main {
   max-width: 980px;
-  margin: -120px auto 0;
+  margin: -140px auto 0;
   padding: 160px 100px 100px;
   box-sizing: border-box;
   background-color: rgba(226, 190, 167, .75);
@@ -121,10 +121,15 @@ a {
 
 .footer {
   width: 100%;
-  height: 60px;
+  height: 100px;
   background-color: gray;
   text-align: center;
-  line-height: 60px;
+  background: url('../images/common/footer_pink.png') center bottom repeat-x;
+  .copyright {
+    z-index: 10;
+    position: relative;
+    top: 68px;
+  }
 }
 
 

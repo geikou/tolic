@@ -9,9 +9,12 @@ $('.js-gnav-toggle').on('click', function() {
   $('.js-gnav').slideToggle(450);
 });
 
-/*twitterクーポンシェア*/
-var w = 500, h = 350;
-var wPosX = (window.innerWidth-w)/2, wPosY = (window.innerHeight-h)/2;
+/* twitterクーポンシェア */
+
+var w = 500,
+    h = 350;
+var wPosX = (window.innerWidth-w)/2,
+    wPosY = (window.innerHeight-h)/2;
 
 function twitterPopup(){
 	var url = 'https://twitter.com/share?';
