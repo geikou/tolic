@@ -305,8 +305,11 @@ a {
   .coupon {
     width:80%;
     margin: 0 auto;
+    img {
+      cursor: pointer;
+    }
   }
-  p {
+  main p {
     margin : 10px auto;
     font-size: 18px;
     line-height: 1.8em;
