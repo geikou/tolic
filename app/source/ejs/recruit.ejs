@@ -32,21 +32,21 @@
     </section>
     <section class="form">
       <h2><img src="./images/recruit/h2_form.png" alt="応募フォーム"></h2>
-      <form>
+      <form method="post" action="mailform.php">
         <div>
           <label for="name">お名前</label>
-          <input type="text" id="name" />
+          <input type="text" id="name" name="お名前" />
         </div>
         <div>
           <label for="mail">E-mail</label>
-          <input type="email" id="mail" />
+          <input type="email" id="mail" name="Email" />
         </div>
         <div>
           <label for="msg">応募動機・意気込み</label>
-          <textarea id="msg"></textarea>
+          <textarea id="msg" name="応募動機・意気込み"></textarea>
         </div>
         <div class="button">
-          <input type="image" src="./images/recruit/entry_btn.png" alt="応募する">
+          <input type="submit" alt="応募する">
         </div>
       </form>
     </section>

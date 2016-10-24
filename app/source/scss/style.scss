@@ -243,20 +243,36 @@ a {
           height: 160px;
         }
         .button {
-          width: 327px;
-          height: 68px;
-          @include media(sp) {
-            max-width: 280px;
-          }
           margin: 20px auto 0 auto;
+          text-align: center;
           input {
+            cursor: pointer;
+            width: 327px;
+            @include media(sp) {
+              max-width: 280px;
+            }
+            height: 68px;
+            margin: 0 auto;
             padding: 0;
+            font-size: 0;
+            background: url('../images/recruit/entry_btn.png') no-repeat;
+            background-size: contain;
           }
           &:hover {
             opacity: 0.8;
           }
         }
       }
+    }
+  }
+}
+
+#finish {
+  .main {
+    height: 100vh;
+    p {
+    text-align: center;
+    line-height: 3em;
     }
   }
 }
