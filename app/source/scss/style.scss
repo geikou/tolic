@@ -55,10 +55,10 @@ a {
   &.is-open {
     span {
       &.top {
-        transform: rotate(405deg) translateX(9px) translateY(16px);
+        transform: rotate(405deg) translateX(10px) translateY(10px);
       }
       &.bottom {
-        transform: rotate(-405deg) translateX(5px) translateY(-10px);
+        transform: rotate(-405deg) translateX(10px) translateY(-10px);
       }
       &.middle {
         opacity: 0;
