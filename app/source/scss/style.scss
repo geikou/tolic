@@ -237,6 +237,10 @@ a {
 }
 
 #menu {
+  text-align: center;
+  h3 {
+        margin-top: 50px;
+    }
   .mv {
     width: 100%;
     text-align: center;
@@ -246,13 +250,9 @@ a {
   }
   .menu-tolic {
     width:100%;
-    text-align: center;
     font-size: 18px;
     line-height: 1.8em;
     letter-spacing: .01em;
-    h3 {
-        margin-top: 50px;
-    }
   }
   table {
     margin : 10px auto;
@@ -260,6 +260,16 @@ a {
   td {
     padding: 5px 20px;
     text-align: left;
+  }
+  .coupon {
+    width:80%;
+    margin: 0 auto;
+  }
+  p {
+    margin : 10px auto;
+    font-size: 18px;
+    line-height: 1.8em;
+    letter-spacing: .01em;
   }
 }
 
