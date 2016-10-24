@@ -18,6 +18,10 @@ body {
   background: url('../images/common/bg.png') center bottom/cover;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -94,6 +98,16 @@ a {
   .h2 {
     text-align: center;
     margin: 20px 0 80px;
+    @include media(sp) {
+      img {
+        width: 88%;
+      }
+    }
+  }
+  @include media(sp) {
+    box-sizing: content-box;
+    padding: 0;
+    padding-top: 160px;
   }
 }
 
