@@ -126,11 +126,9 @@
   color: white;
   font-size: 20px;
   letter-spacing: 1px;
-  &.index {
-    position: fixed;
-    bottom: 0;
-    z-index: 10;
-  }
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
   text-align: center;
 }
 
