@@ -12,6 +12,7 @@
   <main class="main">
     <h2><img src="./images/recruit/h2.png" alt="採用情報"></h2>
     <img class="leftimg" src="./images/recruit/left.png" alt="">
+    <img class="rightimg" src="./images/recruit/right.png" alt="">
     <section class="recruit-about">
       <p class="l-txt">＼  アルバイト募集中!  ／</p>
       <p>バイトデビューの方も大歓迎！<br>
@@ -30,25 +31,25 @@
       <p>能力給</p>
     </section>
     <section class="form">
-      <form>
+      <h2><img src="./images/recruit/h2_form.png" alt="応募フォーム"></h2>
+      <form method="post" action="mailform.php">
         <div>
           <label for="name">お名前</label>
-          <input type="text" id="name" />
+          <input type="text" id="name" name="お名前" />
         </div>
         <div>
           <label for="mail">E-mail</label>
-          <input type="email" id="mail" />
+          <input type="email" id="mail" name="Email" />
         </div>
         <div>
           <label for="msg">応募動機・意気込み</label>
-          <textarea id="msg"></textarea>
+          <textarea id="msg" name="応募動機・意気込み"></textarea>
         </div>
         <div class="button">
-          <input type="image" src="./images/recruit/entry_btn.png" alt="応募する" width="327" height="68">
+          <input type="submit" alt="応募する">
         </div>
       </form>
     </section>
-    <img class="rightimg" src="./images/recruit/right.png" alt="">
   </main>
   <% include _footer %>
   <% include _script %>
