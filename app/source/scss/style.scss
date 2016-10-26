@@ -354,7 +354,10 @@ a {
 
 #access {
   .booth-map {
-    width: 100%;
+    @include media(sp) {
+      width: 94%;
+      margin: 0 3%;
+    }
     padding: 50px 0;
     text-align: center;
     background: rgba(255,255,255,0.3);
@@ -365,6 +368,8 @@ a {
   .walk {
     text-align: center;
     @include media(sp) {
+      width: 94%;
+      margin: 0 3%;
       padding: 0 0 70px 0;
     }
     h3 {
