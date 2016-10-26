@@ -35,15 +35,15 @@
       <form method="post" action="mailform.php">
         <div>
           <label for="name">お名前</label>
-          <input type="text" id="name" name="お名前" />
+          <input type="text" id="name" name="お名前" required />
         </div>
         <div>
           <label for="mail">E-mail</label>
-          <input type="email" id="mail" name="Email" />
+          <input type="email" id="mail" name="Email" required />
         </div>
         <div>
           <label for="msg">応募動機・意気込み</label>
-          <textarea id="msg" name="応募動機・意気込み"></textarea>
+          <textarea id="msg" name="応募動機・意気込み" required ></textarea>
         </div>
         <div class="button">
           <input type="submit" alt="応募する">
